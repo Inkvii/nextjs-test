@@ -21,6 +21,7 @@
     "noEmit": true,
     "jsx": "preserve",
     "pretty": true,
+    "baseUrl": "./",
     "typeRoots": [
       "src/types  "
     ]
@@ -28,7 +29,8 @@
   "include": [
     "src",
     "public",
-    "pages"
+    "pages",
+    "component"
   ],
   "exclude": [
     "node_modules"

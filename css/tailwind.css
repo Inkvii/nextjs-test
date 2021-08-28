@@ -1,0 +1,8 @@
+@tailwind components;
+@tailwind screens;
+@tailwind base;
+@tailwind utilities;
+
+.grid-template-content {
+	grid-template-columns: minmax(200px, 2fr) 10fr;
+}
