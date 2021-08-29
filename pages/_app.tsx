@@ -7,13 +7,13 @@ import Menu from "component/Menu"
 function MyApp({Component, pageProps}: AppProps) {
   return (
     <div className={"grid grid-template-content"}>
-      <Header className={"col-span-2 row-start-1"}/>
-      <Menu className={"row-start-2 min-h-screen"}/>
-      <div className={"row-start-2 m-4"}>
+      <Header className={"col-span-2"}/>
+      <Menu className={"min-h-screen sm:col-span-2 md:col-span-1"}/>
+      <div className={"m-4 sm:col-span-2 md:col-span-1"}>
         <Component {...pageProps} />
       </div>
 
-      <div className={"bg-blue-600 row-start-3 col-span-2 py-2 text-white flex justify-center"}>Footer</div>
+      <div className={"bg-blue-600 col-span-2 py-2 text-white flex justify-center"}>Footer</div>
     </div>
   )
 }
