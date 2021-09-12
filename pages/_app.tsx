@@ -8,7 +8,7 @@ function MyApp({Component, pageProps}: AppProps) {
   return (
     <div className={"grid grid-template-content"}>
       <Header className={"col-span-2"}/>
-      <Menu className={"min-h-screen sm:col-span-2 md:col-span-1"}/>
+      <Menu className={"md:min-h-100 sm:col-span-2 md:col-span-1 md:scroll-snap-x"}/>
       <div className={"m-4 sm:col-span-2 md:col-span-1"}>
         <Component {...pageProps} />
       </div>

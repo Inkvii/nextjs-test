@@ -6,3 +6,11 @@
 .grid-template-content {
 	grid-template-columns: minmax(200px, 2fr) 10fr;
 }
+
+@layer utilities {
+	@variants responsive {
+		.min-h-100 {
+			min-height: 100vh;
+		}
+	}
+}
