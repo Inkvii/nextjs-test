@@ -1,4 +1,4 @@
-import ReactFlow, {isEdge, Node, Position} from "react-flow-renderer"
+import ReactFlow, {isNode, Node, Position} from "react-flow-renderer"
 import type {Elements} from "react-flow-renderer/dist/types"
 import {useState} from "react"
 import NodeComponent, {NodeData} from "component/NodeComponent"
@@ -52,7 +52,7 @@ export default function Home() {
 		console.log(node)
 
 		const newEl: Elements = elements.map(n => {
-			if (n.id === node.id && !isEdge(n)) {
+			if (n.id === node.id && isNode(n)) {
 				n.type = "custom"
 				console.log("Found node")
 			}

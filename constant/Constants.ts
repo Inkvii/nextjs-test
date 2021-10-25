@@ -15,5 +15,9 @@ export const MENU_ROUTES: { [keyof: string]: Route } = {
 	items: {
 		menuDescription: "All items",
 		url: "/items"
+	},
+	predicate: {
+		menuDescription: "Predicates",
+		url: "/predicate"
 	}
 }
