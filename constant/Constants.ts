@@ -19,5 +19,9 @@ export const MENU_ROUTES: { [keyof: string]: Route } = {
 	predicate: {
 		menuDescription: "Predicates",
 		url: "/predicate"
+	},
+	edgeChecked: {
+		menuDescription: "Edge checked nodes",
+		url: "/edgepredicate"
 	}
 }
